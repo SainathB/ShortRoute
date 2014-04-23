@@ -1,0 +1,17 @@
+body
+{
+	background: rgb(95, 95, 95);
+}
+#position
+{
+	position: absolute;
+	top:10px;
+	left:10px;
+	height:40px;
+	width:250px;
+	background: white;
+	border-radius: 10px;
+	font-family: Courier;
+	font-size: 30px;
+	color:green;
+}

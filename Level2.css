@@ -1,0 +1,93 @@
+body
+{
+	margin: 0px;
+	background-color:rgb(58, 52, 52);
+}
+#level2
+{
+	background: rgb(64, 109, 139);
+	position: absolute;
+	top:40px;
+	left:380px;
+	width:180px;
+	height: 40px;
+	color:rgb(188, 189, 188);
+	font-family: Courier;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 5px;
+	border-width: 2px;
+	border-style: dashed;
+	border-radius: 10px;
+	border-color: white;
+	
+}
+#scoreboard
+{
+	position: absolute;
+	background: rgb(104, 128, 123);
+	top:100px;
+	left: 950px;
+	height: 550px;
+	width:350px;
+	border-radius: 10px;
+	border-style: dashed;
+	border-color: white;
+}
+#score
+{
+	background: rgb(64, 109, 139);
+	position: absolute;
+	top:40px;
+	width:180px;
+	height: 40px;
+	left:1050px;
+	color:rgb(188, 189, 188);
+	font-family: Courier;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 5px;
+	border-width: 2px;
+	border-style: dashed;
+	border-radius: 10px;
+	border-color: white;
+	
+}
+#gonextlevel
+{
+	background:  rgb(64, 109, 139);
+	position: absolute;
+	top:300px;
+	width:330px;
+	height: 40px;
+	left:10px;
+	color:rgb(188, 189, 188);
+	font-family: Courier;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 5px;
+	border-width: 2px;
+	border-style: dashed;
+	border-radius: 10px;
+	border-color: white;
+	visibility: hidden;
+}
+#playagain
+{
+	background:  rgb(64, 109, 139);
+	position: absolute;
+	top:360px;
+	width:335px;
+	height: 40px;
+	left:10px;
+	color:rgb(188, 189, 188);
+	font-family: Courier;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 5px;
+	border-width: 2px;
+	border-style: dashed;
+	border-radius: 10px;
+	border-color: white;
+	visibility: hidden;
+}

@@ -1,0 +1,73 @@
+body
+{
+	margin: 0px;
+	background-color:rgb(14, 216, 14);
+}
+#level1
+{
+	background: yellow;
+	position: absolute;
+	top:80px;
+	width:180px;
+	height: 40px;
+	left:537.5px;
+	color:red;
+	font-family: Courier;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 5px;
+	
+}
+#scoreboard
+{
+	position: absolute;
+	background: blue;
+	top:160px;
+	left: 900px;
+	height: 550px;
+	width:400px;
+}
+#score
+{
+	background: yellow;
+	position: absolute;
+	top:80px;
+	width:180px;
+	height: 40px;
+	left:987.5px;
+	color:red;
+	font-family: Courier;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 5px;
+}
+#gonextlevel
+{
+	background: yellow;
+	position: absolute;
+	top:300px;
+	width:380px;
+	height: 40px;
+	left:10px;
+	color:red;
+	font-family:Courier;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 5px;
+	visibility: hidden;
+}
+#playagain
+{
+	background: yellow;
+	position: absolute;
+	top:360px;
+	width:380px;
+	height: 40px;
+	left:10px;
+	color:red;
+	font-family:Courier;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 5px;
+	visibility: hidden;
+}
