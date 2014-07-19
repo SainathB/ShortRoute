@@ -1,0 +1,410 @@
+// Sample 1
+	 var source0;
+	 var destination0;
+	 var nV0;
+	 var x0;
+	 var y0;
+	 var edges0;
+	 var edge_info0;
+	 source0=0;
+	 destination0=15;
+	 nV0=16;
+	 edges0=new Array(nV0);
+	edges0=[2,2,3,3,2,3,3,2,2,2,2,2,4,2,2,2];
+	//--x_co_ordinates----
+
+	x0=new Array(nV0);
+	x0=[68,126,170,230,211,273,330,381,336,424,381,471,580,610,672,703];
+	//--y_co_ordinates----
+
+	y0=new Array(nV0);
+	y0=[215,138,260,140,368,274,193,102,343,196,431,294,264,175,297,212];
+	//---edge_info--------
+
+	edge_info0=new Array(nV0);
+	for(var i=0;i<nV0;i++)
+	{
+		edge_info0[i]=new Array(edges0[i]);
+	}
+ 	edge_info0[0][0]=1;
+ 	edge_info0[0][1]=2;
+ 	edge_info0[1][0]=0;
+ 	edge_info0[1][1]=3;
+ 	edge_info0[2][0]=0;
+ 	edge_info0[2][1]=3;
+ 	edge_info0[2][2]=4;
+ 	edge_info0[3][0]=1;
+ 	edge_info0[3][1]=2;
+ 	edge_info0[3][2]=7;
+ 	edge_info0[4][0]=2;
+ 	edge_info0[4][1]=5;
+ 	edge_info0[5][0]=8;
+ 	edge_info0[5][1]=4;
+ 	edge_info0[5][2]=6;
+ 	edge_info0[6][0]=5;
+ 	edge_info0[6][1]=7;
+ 	edge_info0[6][2]=9;
+ 	edge_info0[7][0]=6;
+ 	edge_info0[7][1]=3;
+ 	edge_info0[8][0]=5;
+ 	edge_info0[8][1]=10;
+ 	edge_info0[9][0]=6;
+ 	edge_info0[9][1]=11;
+ 	edge_info0[10][0]=8;
+ 	edge_info0[10][1]=12;
+ 	edge_info0[11][0]=9;
+ 	edge_info0[11][1]=12;
+ 	edge_info0[12][0]=10;
+ 	edge_info0[12][1]=11;
+ 	edge_info0[12][2]=14;
+ 	edge_info0[12][3]=13;
+ 	edge_info0[13][0]=12;
+ 	edge_info0[13][1]=15;
+ 	edge_info0[14][0]=12;
+ 	edge_info0[14][1]=15;
+ 	edge_info0[15][0]=13;
+ 	edge_info0[15][1]=14;
+
+	lv[0]=new LevelData(source0,destination0,nV0,edges0,x0,y0,edge_info0);	 
+	 //Sample1 End
+	//Sample 2
+	 var source1;
+	 var destination1;
+	 var nV1;
+	 var x1;
+	 var y1;
+	 var edges1;
+	 var edge_info1;
+	 source1=0;
+	 destination1=15;
+	 nV1=16;
+	 edges1=new Array(nV1);
+	edges1=[2,2,2,2,4,2,2,2,2,4,2,2,2,2,2,2];
+	//--x_co_ordinates----
+
+	x1=new Array(nV1);
+	x1=[76,96,203,207,187,323,344,394,390,528,566,583,639,692,688,738];
+	//--y_co_ordinates----
+
+	y1=new Array(nV1);
+	y1=[280,165,404,97,235,92,187,297,387,225,135,272,99,134,290,181];
+	//---edge_info--------
+
+	edge_info1=new Array(nV1);
+	for(var i=0;i<nV1;i++)
+	{
+		edge_info1[i]=new Array(edges1[i]);
+	}
+	edge_info1[0][0]=1;
+	edge_info1[0][1]=2;
+	edge_info1[1][0]=0;
+	edge_info1[1][1]=3;
+	edge_info1[2][0]=0;
+	edge_info1[2][1]=4;
+	edge_info1[3][0]=1;
+	edge_info1[3][1]=4;
+	edge_info1[4][0]=2;
+	edge_info1[4][1]=5;
+	edge_info1[4][2]=7;
+	edge_info1[4][3]=3;
+	edge_info1[5][0]=4;
+	edge_info1[5][1]=6;
+	edge_info1[6][0]=5;
+	edge_info1[6][1]=9;
+	edge_info1[7][0]=4;
+	edge_info1[7][1]=8;
+	edge_info1[8][0]=7;
+	edge_info1[8][1]=9;
+	edge_info1[9][0]=6;
+	edge_info1[9][1]=11;
+	edge_info1[9][2]=8;
+	edge_info1[9][3]=10;
+	edge_info1[10][0]=9;
+	edge_info1[10][1]=12;
+	edge_info1[11][0]=9;
+	edge_info1[11][1]=14;
+	edge_info1[12][0]=10;
+	edge_info1[12][1]=13;
+	edge_info1[13][0]=12;
+	edge_info1[13][1]=15;
+	edge_info1[14][0]=11;
+	edge_info1[14][1]=15;
+	edge_info1[15][0]=13;
+	edge_info1[15][1]=14;
+
+	lv[1]=new LevelData(source1,destination1,nV1,edges1,x1,y1,edge_info1);
+	// Sample 2 End		
+    // Sample 3
+	 var source2;
+	 var destination2;
+	 var nV2;
+	 var x2;
+	 var y2;
+	 var edges2;
+	 var edge_info2;
+	 source2=0;
+	 destination2=14;
+	 nV2=15;
+	 edges2=new Array(nV2);
+	edges2=[2,2,2,2,2,4,4,2,3,3,2,2,2,2,2];
+	//--x_co_ordinates----
+
+	x2=new Array(nV2);
+	x2=[40,46,163,171,232,270,307,378,449,483,580,648,574,672,767];
+	//--y_co_ordinates----
+
+	y2=new Array(nV2);
+	y2=[186,324,216,304,252,395,206,115,291,143,98,68,349,270,132];
+	//---edge_info--------
+
+	edge_info2=new Array(nV2);
+	for(var i=0;i<nV2;i++)
+	{
+		edge_info2[i]=new Array(edges2[i]);
+	}
+	edge_info2[0][0]=1;
+	edge_info2[0][1]=2;
+	edge_info2[1][0]=0;
+	edge_info2[1][1]=3;
+	edge_info2[2][0]=0;
+	edge_info2[2][1]=6;
+	edge_info2[3][0]=1;
+	edge_info2[3][1]=5;
+	edge_info2[4][0]=6;
+	edge_info2[4][1]=5;
+	edge_info2[5][0]=8;
+	edge_info2[5][1]=4;
+	edge_info2[5][2]=6;
+	edge_info2[5][3]=3;
+	edge_info2[6][0]=2;
+	edge_info2[6][1]=7;
+	edge_info2[6][2]=4;
+	edge_info2[6][3]=8;
+	edge_info2[7][0]=6;
+	edge_info2[7][1]=9;
+	edge_info2[8][0]=5;
+	edge_info2[8][1]=9;
+	edge_info2[8][2]=12;
+	edge_info2[9][0]=7;
+	edge_info2[9][1]=10;
+	edge_info2[9][2]=8;
+	edge_info2[10][0]=9;
+	edge_info2[10][1]=11;
+	edge_info2[11][0]=14;
+	edge_info2[11][1]=10;
+	edge_info2[12][0]=13;
+	edge_info2[12][1]=8;
+	edge_info2[13][0]=12;
+	edge_info2[13][1]=14;
+	edge_info2[14][0]=13;
+	edge_info2[14][1]=11;
+
+	lv[2]=new LevelData(source2,destination2,nV2,edges2,x2,y2,edge_info2);
+	// Sample 3 End	
+	// Sample 4
+	 var source3;
+	 var destination3;
+	 var nV3;
+	 var x3;
+	 var y3;
+	 var edges3;
+	 var edge_info3;
+	 source3=0;
+	 destination3=8;
+	 nV3=12;
+	 edges3=new Array(nV3);
+	edges3=[3,3,2,3,6,2,3,2,2,3,3,2];
+	//--x_co_ordinates----
+
+	x3=new Array(nV3);
+	x3=[231,367,508,202,312,220,450,135,365,361,499,420];
+	//--y_co_ordinates----
+
+	y3=new Array(nV3);
+	y3=[170,227,283,298,339,437,425,416,508,109,133,315];
+	//---edge_info--------
+
+	edge_info3=new Array(nV3);
+	for(var i=0;i<nV3;i++)
+	{
+		edge_info3[i]=new Array(edges3[i]);
+	}
+	edge_info3[0][0]=4;
+	edge_info3[0][1]=3;
+	edge_info3[0][2]=9;
+	edge_info3[1][0]=9;
+	edge_info3[1][1]=4;
+	edge_info3[1][2]=11;
+	edge_info3[2][0]=10;
+	edge_info3[2][1]=6;
+	edge_info3[3][0]=0;
+	edge_info3[3][1]=4;
+	edge_info3[3][2]=7;
+	edge_info3[4][0]=5;
+	edge_info3[4][1]=6;
+	edge_info3[4][2]=3;
+	edge_info3[4][3]=1;
+	edge_info3[4][4]=7;
+	edge_info3[4][5]=0;
+	edge_info3[5][0]=8;
+	edge_info3[5][1]=4;
+	edge_info3[6][0]=2;
+	edge_info3[6][1]=4;
+	edge_info3[6][2]=8;
+	edge_info3[7][0]=3;
+	edge_info3[7][1]=4;
+	edge_info3[8][0]=5;
+	edge_info3[8][1]=6;
+	edge_info3[9][0]=0;
+	edge_info3[9][1]=1;
+	edge_info3[9][2]=10;
+	edge_info3[10][0]=9;
+	edge_info3[10][1]=11;
+	edge_info3[10][2]=2;
+	edge_info3[11][0]=10;
+	edge_info3[11][1]=1;
+	lv[3]=new LevelData(source3,destination3,nV3,edges3,x3,y3,edge_info3);
+	// Sample 4 End	
+	// Sample 5
+	 var source4;
+	 var destination4;
+	 var nV4;
+	 var x4;
+	 var y4;
+	 var edges4;
+	 var edge_info4;
+	 source4=1;
+	 destination4=9;
+	 nV4=13;
+	 edges4=new Array(nV4);
+	edges4=[3,2,3,3,3,4,2,3,3,3,3,3,2];
+	//--x_co_ordinates----
+
+	x4=new Array(nV4);
+	x4=[231,387,548,492,302,175,60,95,185,351,419,560,636];
+	//--y_co_ordinates----
+
+	y4=new Array(nV4);
+	y4=[66,127,53,188,249,187,235,336,418,479,313,475,266];
+	//---edge_info--------
+
+	edge_info4=new Array(nV4);
+	for(var i=0;i<nV4;i++)
+	{
+		edge_info4[i]=new Array(edges4[i]);
+	}
+	edge_info4[0][0]=1;
+	edge_info4[0][1]=6;
+	edge_info4[0][2]=5;
+	edge_info4[1][0]=0;
+	edge_info4[1][1]=2;
+	edge_info4[2][0]=1;
+	edge_info4[2][1]=3;
+	edge_info4[2][2]=12;
+	edge_info4[3][0]=2;
+	edge_info4[3][1]=4;
+	edge_info4[3][2]=11;
+	edge_info4[4][0]=5;
+	edge_info4[4][1]=10;
+	edge_info4[4][2]=3;
+	edge_info4[5][0]=8;
+	edge_info4[5][1]=4;
+	edge_info4[5][2]=7;
+	edge_info4[5][3]=0;
+	edge_info4[6][0]=0;
+	edge_info4[6][1]=7;
+	edge_info4[7][0]=6;
+	edge_info4[7][1]=5;
+	edge_info4[7][2]=8;
+	edge_info4[8][0]=5;
+	edge_info4[8][1]=7;
+	edge_info4[8][2]=9;
+	edge_info4[9][0]=8;
+	edge_info4[9][1]=11;
+	edge_info4[9][2]=10;
+	edge_info4[10][0]=9;
+	edge_info4[10][1]=11;
+	edge_info4[10][2]=4;
+	edge_info4[11][0]=10;
+	edge_info4[11][1]=12;
+	edge_info4[11][2]=3;
+	edge_info4[12][0]=2;
+	edge_info4[12][1]=11;
+
+	lv[4]=new LevelData(source4,destination4,nV4,edges4,x4,y4,edge_info4);
+	// Sample 5 End
+	// Sample 6
+	 var source5;
+	 var destination5;
+	 var nV5;
+	 var x5;
+	 var y5;
+	 var edges5;
+	 var edge_info5;
+	 source5=0;
+	 destination5=14;
+	 nV5=15;
+	 edges5=new Array(nV5);
+	edges5=[3,2,3,3,3,2,2,3,2,3,4,3,2,4,3];
+	//--x_co_ordinates----
+
+	x5=new Array(nV5);
+	x5=[380,230,583,329,490,450,175,275,580,225,375,516,180,347,485];
+	//--y_co_ordinates----
+
+	y5=new Array(nV5);
+	y5=[46,114,64,155,120,210,210,240,227,340,319,361,415,463,500];
+	//---edge_info--------
+
+	edge_info5=new Array(nV5);
+	for(var i=0;i<nV5;i++)
+	{
+		edge_info5[i]=new Array(edges5[i]);
+	}
+	edge_info5[0][0]=1;
+	edge_info5[0][1]=2;
+	edge_info5[0][2]=3;
+	edge_info5[1][0]=0;
+	edge_info5[1][1]=6;
+	edge_info5[2][0]=0;
+	edge_info5[2][1]=4;
+	edge_info5[2][2]=8;
+	edge_info5[3][0]=0;
+	edge_info5[3][1]=5;
+	edge_info5[3][2]=7;
+	edge_info5[4][0]=5;
+	edge_info5[4][1]=2;
+	edge_info5[4][2]=11;
+	edge_info5[5][0]=3;
+	edge_info5[5][1]=4;
+	edge_info5[6][0]=1;
+	edge_info5[6][1]=9;
+	edge_info5[7][0]=3;
+	edge_info5[7][1]=9;
+	edge_info5[7][2]=10;
+	edge_info5[8][0]=2;
+	edge_info5[8][1]=11;
+	edge_info5[9][0]=6;
+	edge_info5[9][1]=7;
+	edge_info5[9][2]=12;
+	edge_info5[9][2]=13;
+	edge_info5[10][0]=7;
+	edge_info5[10][1]=11;
+	edge_info5[10][2]=13;
+	edge_info5[10][3]=14;
+	edge_info5[11][0]=10;
+	edge_info5[11][1]=14;
+	edge_info5[11][2]=4;
+	edge_info5[11][3]=8;
+	edge_info5[12][0]=9;
+	edge_info5[12][1]=13;
+	edge_info5[13][0]=9;
+	edge_info5[13][1]=12;
+	edge_info5[13][2]=14;
+	edge_info5[13][3]=10;
+	edge_info5[14][0]=10;
+	edge_info5[14][1]=11;
+	edge_info5[14][2]=13;
+
+	lv[5]=new LevelData(source5,destination5,nV5,edges5,x5,y5,edge_info5);
+	// Sample 6 End	

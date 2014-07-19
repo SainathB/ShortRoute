@@ -2,20 +2,56 @@
 <html>
 <head>
 	<title>
-		-:ShortCut:-
+		ShortCut
 	</title>
-	<link rel="icon" type="image/jpg" href="main_game_background.jpg">
-	<link rel="stylesheet" type="text/css" href="startpage.css">
-	<script type="text/javascript" src="startpage.js">
-
-	</script>
+	<link rel="icon" type="image/jpg" href="S.jpg">
+	<link rel="stylesheet" type="text/css" href="startpage.css"> 
+	<script type="text/javascript" src="startpage.js"></script>
 </head>
 <body>
-	<img src="main_game_background.jpg" style="height:100%;width:100%;opacity:0.8">
 	
+	<div id="mainlogo">
+		<img src="main_logo.png">
+	</div>
 	<button onclick="openLevel1()">
 		Play!
 	</button>
+	<div id="instructions" >
+		INSTRUCTIONS
+	</div>
+	<div id="info">
+		<div id="innerbox">
+			 "ShortCut" is a game based on Shortest path algorithms like Dijkstra's algorithm and Bellmanford algorithm.<br>
+			 <br>
+			 In this game the user is supposed to find the shortest path between the source and destination.<br>
+			 <br>
+			 Initially there will be two verices marked as source and destination. You can mark path by clicking on vertices.<br>
+			 After the path is completed, The best path will be shown and if your matches with the best path you will be passed to next level.
+			 Otherwise you have to play the same level again.<br>
+			 <br>
+			 Scoring is based on both time elapsed as well as no of penalty attempts.<br>
+			 Level1 and Level2 will have all positive edges and in Level3 some negative edges are included<br>
+			 <h1 id="happy">HAPPY PLAYING! :)</h1>  
+
+
+		</div>
+		
+	</div>
+	
+	<div id="level_indicator">
+		<div id="one">
+		</div>
+		<div id="two">
+			
+		</div>
+		<div id="three">
+			
+		</div>
+		<div id="four">
+			
+		</div>
+	</div>
+
 	
 </body>
 </html>

@@ -1,20 +1,127 @@
 body
 {
 	margin: 0px;
+	background-color: #496814 ;
+}
+#mainlogo
+{
+	position: absolute;
+	top:25px;
+	left: 30px;
 }
 button
 {
 	position: absolute;
-	top:250px;
-	left: 1000px;
+	top:50px;
+	left: 600px;
 	height: 50px;
 	width: 200px; 
-	background:inherit;
+	background:#030303;
 	font-family: Courier;
 	font-size: 30px;
 	font-weight: 10;
 	color: white;
 	border-width: 1px;
-	border-radius: 10px;
-	border-color: rgb(243, 9, 196);
+	border-color: white;
+}
+button:hover
+{
+	background-color:#915009;
+}
+#instructions
+{
+	position: absolute;
+	top:150px;
+	left: 575px;
+	height: 35px;
+	width: 250px; 
+	background:#030303;
+	font-family: Courier;
+	font-size: 30px;
+	font-weight: 10;
+	color: white;
+	border-width: 1px;
+	border-color: white;
+	text-align: center;
+}
+
+#level_indicator
+{
+	
+	position: absolute;
+	top:33px;
+	left:200px;
+	height: 100px;
+	width: 100px;
+	background-color: rgb(3, 2, 3);
+	border-width: 10px;
+	border-color:red;
+
+}
+#one
+{
+	position: absolute;
+	top:4px;
+	left:4px;
+	height: 44px;
+	width: 44px;
+	background-color: rgb(174, 174, 255);
+}
+#two
+{
+	position: absolute;
+	top:4px;
+	left:52px;
+	height: 44px;
+	width: 44px;
+	background-color: rgb(174, 174, 255);
+
+}
+#three
+{
+	position: absolute;
+	top:52px;
+	left:4px;
+	height: 44px;
+	width: 44px;
+	background-color: rgb(174, 174, 255);
+}
+#four
+{
+	position: absolute;
+	top:52px;
+	left:52px;
+	height: 44px;
+	width: 44px;
+	background-color: rgb(174, 174, 255);
+}
+#info
+{
+	position: absolute;
+	height:500px;
+	width: 700px;
+	top:200px;
+	left:350px;
+	background-color: rgb(18, 194, 159);
+	border-width: 2px;
+	color: rgb(233, 233, 69);
+
+}
+#innerbox
+{
+	position: absolute;
+	height:410px;
+	width: 660px;
+	top:20px;
+	left:20px;
+	background-color: rgb(21, 27, 26);
+	border-width: 2px;
+	color: rgb(233, 233, 69);
+	font-family: Courier;
+	font-size: 20px;
+
+}
+#happy
+{
+	color:rgb(213, 19, 73);
 }

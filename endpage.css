@@ -1,0 +1,103 @@
+body
+{
+	margin: 0px;
+	background-color: #496814 ;
+}
+#mainlogo
+{
+	position: absolute;
+	top:25px;
+	left: 30px;
+}
+
+#level_indicator
+{
+	
+	position: absolute;
+	top:33px;
+	left:200px;
+	height: 100px;
+	width: 100px;
+	background-color: rgb(3, 2, 3);
+	
+
+}
+#one
+{
+	position: absolute;
+	top:4px;
+	left:4px;
+	height: 44px;
+	width: 44px;
+	background-color: rgb(174, 174, 255);
+}
+#two
+{
+	position: absolute;
+	top:4px;
+	left:52px;
+	height: 44px;
+	width: 44px;
+	background-color: rgb(174, 174, 255);
+
+}
+#three
+{
+	position: absolute;
+	top:52px;
+	left:4px;
+	height: 44px;
+	width: 44px;
+	background-color: rgb(174, 174, 255);
+}
+#four
+{
+	position: absolute;
+	top:52px;
+	left:52px;
+	height: 44px;
+	width: 44px;
+	background-color:rgb(252, 234, 27);
+}
+#info
+{
+	position: absolute;
+	height:500px;
+	width: 700px;
+	top:200px;
+	left:350px;
+	background-color: rgb(18, 194, 159);
+	border-width: 2px;
+	color: rgb(233, 233, 69);
+
+}
+#innerbox
+{
+	position: absolute;
+	height:410px;
+	width: 660px;
+	top:20px;
+	left:20px;
+	background-color: rgb(21, 27, 26);
+	border-width: 2px;
+	color: rgb(233, 233, 69);
+	font-family: Courier;
+	font-size: 20px;
+
+}
+#instructions
+{
+	position: absolute;
+	top:100px;
+	left: 575px;
+	height: 35px;
+	width: 250px; 
+	background:rgb(25, 25, 196);
+	font-family: Courier;
+	font-size: 30px;
+	font-weight: 10;
+	color: white;
+	border-width: 1px;
+	border-color: white;
+	text-align: center;
+}

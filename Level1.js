@@ -1,4 +1,13 @@
 
+var myVar=setInterval(function(){myTimer()},1000);
+var d="global";
+var d=0;
+function myTimer()
+{
+
+document.getElementById("clock").innerHTML=d;
+d++;
+}
 // LevelData class :used to store completeinformation about a Level
 /*
 class LevelData:
@@ -16,6 +25,7 @@ ___________VARIABLES____________________________________________________________
 ---- y : is an Array denoting the y co ordinates of vertices.
 ---- edge_info: is a multidimensional Array stroing neighbours of each vertex.
 */
+
 function LevelData(source,destination,size,edges,x,y,edge_info)
 {
 	this.source=source;
@@ -73,6 +83,8 @@ var playerStack="global";
 var sss="global";
 var yourscore="global";
 var bestscore="global";
+var penalty="global";
+penalty=0;
 /***************DIJKSTRA'S CODE HERE******************/
 //This function is fine
 function allMarked(marked)
@@ -221,10 +233,10 @@ function drawBestPath(bestStack)
 	{
 		var l=bestStack[i];
 		var m=bestStack[i+1];
-			var startx=windowx+Level1.x[l];
-			var starty=windowy+Level1.y[l];
-			var endx=windowx+Level1.x[m];
-			var endy=windowy+Level1.y[m];
+			var startx=Level1.x[l];
+			var starty=Level1.y[l];
+			var endx=Level1.x[m];
+			var endy=Level1.y[m];
 			//alert(startx+" "+starty+" "+endx+" "+endy+"<br>");
 			var pt=raph.path("M "+startx+" "+starty+" "+endx+" "+endy);
 			pt.attr({stroke:"green","stroke-width":3});
@@ -241,23 +253,24 @@ function getClickPosition(e) {
 		audio.play();
 
  	 //alert(presentvertex);
- 	 if(xPosition>=windowx && xPosition<=windowx+800 && yPosition>=windowy && yPosition<=windowy+550)
- 	 {	
+ 	 	
  	 	//alert("dude");
      //var d_from_cent_dest=(windowx+Level1.x[Level1.destination]-xPosition)*(windowx+Level1.x[Level1.destination]-xPosition)+(windowy+Level1.y[Level1.destination]-yPosition)*(windowy+Level1.y[Level1.destination]-yPosition);
     for(var i=0;i<Level1.no_of_edges[presentvertex];i++)
     {
     	var presentx=Level1.x[Level1.edge_info[presentvertex][i]];
     	var presenty=Level1.y[Level1.edge_info[presentvertex][i]];
+    	//alert(windowx+presentx+" "+windowy+presenty+" "+xPosition+" "+yPosition);
     	var d_from_present_to_click=Math.sqrt((windowx+presentx-xPosition)*(windowx+presentx-xPosition)+(windowy+presenty-yPosition)*(windowy+presenty-yPosition));
     	
-    	//alert(d_from_present_to_click);
-    	if(d_from_present_to_click<=10)
+    	
+
+    	if(d_from_present_to_click<=60)
     	{
-    		var startx=windowx+Level1.x[presentvertex];
-			var starty=windowy+Level1.y[presentvertex];
-			var endx=windowx+presentx;
-			var endy=windowy+presenty;
+    		var startx=Level1.x[presentvertex];
+			var starty=Level1.y[presentvertex];
+			var endx=presentx;
+			var endy=presenty;
 			//alert(startx+" "+starty+" "+endx+" "+endy+"<br>");
 			var pt=raph.path("M "+startx+" "+starty+" "+endx+" "+endy);
 			pt.attr({stroke:"yellow","stroke-width":3});
@@ -298,8 +311,10 @@ function getClickPosition(e) {
     	      {
     	      	Level1Completed=1;
     	      	document.getElementById("bestscore").style.visibility="visible";
+    	      	document.getElementById("finalscore").innerHTML=yourscore-.01*d-10*penalty;
+    	      	document.getElementById("finalscore").style.visibility="visible";
     	      	document.getElementById("gonextlevel").style.visibility="visible";
-    	      	drawBestPath(kkk);
+    	      	drawBestPath(one);
 
     	      }
     	else
@@ -307,10 +322,12 @@ function getClickPosition(e) {
     			Level1Completed=1;
     			document.getElementById("bestscore").style.visibility="visible";
     			document.getElementById("playagain").style.visibility="visible";
-    			drawBestPath(kkk);
+    			document.getElementById("finalscore").innerHTML=yourscore-.01*d-10*penalty;
+    	      	document.getElementById("finalscore").style.visibility="visible";
+    			drawBestPath(one);
     		}
     }
-    }
+    
 }
 }
 document.addEventListener("click", getClickPosition,false);
@@ -328,20 +345,20 @@ function drawGraph()
 	for(var i=0;i<size;i++)
 	{
 		
-		var cir=raph.circle(windowx+Level1.x[i],windowy+Level1.y[i],10);
+		var cir=raph.circle(Level1.x[i],Level1.y[i],10);
 		//document.write(Level1.x[i]+" "+Level1.y[i]+"<br>");
 		
-		cir.attr({fill:"45-red-orange",cursor:"pointer"});
+		cir.attr({fill:"red",cursor:"pointer",stroke:"black","stroke-width":2});
 		
 		if(i==Level1.source)
 		{
-			raph.text(windowx+Level1.x[i],windowy+Level1.y[i]-20,"S",raph.getFont("Courier"));
+			raph.text(Level1.x[i],Level1.y[i]-20,"S",raph.getFont("Courier"));
 			cir.attr({fill:"45-brown-rgb(182, 11, 248)"});
 			//document.write(Level1.source);
 		}
 		if(i==Level1.destination)
 		{
-			raph.text(windowx+Level1.x[i],windowy+Level1.y[i]-20,"D",raph.getFont("Courier"));
+			raph.text(Level1.x[i],Level1.y[i]-20,"D",raph.getFont("Courier"));
 			cir.attr({fill:"45-brown-rgb(182, 11, 248)"});
 
 		}
@@ -384,10 +401,10 @@ function drawEdges()
 			{	
 			var l=i;
 			var m=Level1.edge_info[i][j];
-			var startx=windowx+Level1.x[l];
-			var starty=windowy+Level1.y[l];
-			var endx=windowx+Level1.x[m];
-			var endy=windowy+Level1.y[m];
+			var startx=Level1.x[l];
+			var starty=Level1.y[l];
+			var endx=Level1.x[m];
+			var endy=Level1.y[m];
 
 			count=count+1;
 			//document.write(startx+" "+starty+" "+endx+" "+endy+"<br>");
@@ -416,6 +433,10 @@ function playLevel1()
 	 var audio=new Audio('BGM.mp3');
 	 audio.play();
 	 randomlevel=Math.floor((Math.random()*10)+1);
+	 while(randomlevel==8)
+	 {
+	 	randomlevel=Math.floor((Math.random()*10)+1);
+	 }
 	 randomlevel--;
 	 var ts=30;
 	 var lv=new Array(ts);
@@ -993,10 +1014,12 @@ function playLevel1()
     sss=0;
     playerStack=[];
     yourscore=0;
+    document.getElementById("penalty").innerHTML=penalty;
     document.getElementById("presentscore").innerHTML=yourscore;
     document.getElementById("bestscore").style.visibility="hidden";
     document.getElementById("gonextlevel").style.visibility="hidden";
     document.getElementById("playagain").style.visibility="hidden";
+    document.getElementById("finalscore").style.visibility="hidden";
     bestscore=0;
     Level1Completed=0;
     for(var i=0;i<Level1.no_of_vertices;i++)
@@ -1010,17 +1033,17 @@ function playLevel1()
     }
 
   	//document.write("good");
-    windowx=80.5;
-    windowy=100;
+    windowx=220.5;
+    windowy=150;
 
     
     //document.write("hi");
-    raph=Raphael(0,0,windowx+800+10,windowy+550+10);
-    var gamewindow=raph.rect(windowx,windowy,800,550);
-	gamewindow.attr({fill:"rgb(241, 145, 187)",stroke:"rgb(53, 173, 219)","stroke-width":5,opacity:1,cursor:"pointer"});
+    raph=Raphael(windowx,windowy,800+20,550+20);
+    var gamewindow=raph.rect(10,10,800,550);
+	gamewindow.attr({fill:"#2BD6CF",stroke:"#FF27EE","stroke-width":5,opacity:1,cursor:"pointer"});
 	drawEdges();
     drawGraph();
-
+    //alert(randomlevel);
     
     Visited[Level1.source]=1;
     playerStack[sss++]=Level1.source;
@@ -1040,6 +1063,7 @@ function sai1()
 }
 function sai2()
 {
+	penalty++;
 	playLevel1();
 }
 

@@ -1,73 +1,202 @@
+#mainlogo
+{
+	position: absolute;
+	top:25px;
+	left: 30px;
+}
 body
 {
 	margin: 0px;
-	background-color:rgb(14, 216, 14);
+	background-color:#496814;
 }
-#level1
+#level3
 {
-	background: yellow;
+	background: black;
 	position: absolute;
-	top:80px;
+	top:60px;
+	left:520px;
 	width:180px;
 	height: 40px;
-	left:537.5px;
-	color:red;
+	color:white;
 	font-family: Courier;
 	font-size: 30px;
 	text-align: center;
 	padding-top: 5px;
+	border-width: 2px;
+	border-style: dashed;
+	border-radius: 10px;
+	border-color: white;
 	
 }
+#penaltystring
+{
+	position: absolute;
+	top:20px;
+	left:1000px;
+	color:yellow;
+	font-family: Courier;
+	font-size: 20px;
+}
+#penalty
+{
+	position: absolute;
+	top:40px;
+	left:1090px;
+	height:20px;
+	width:150px;
+	background-color: black;
+	border-style: dashed;
+	border-color: white;
+	border-width:2px;
+	text-align:center;
+	color:white;
+	font-size: 20px;
+	
+}
+#timeelapsed
+{
+	position: absolute;
+	top:50px;
+	left:1010px;
+	color:yellow;
+	font-family: Courier;
+	font-size: 20px;
+}
+
+#clock
+{
+	position: absolute;
+	top:70px;
+	left:1090px;
+	height:20px;
+	width:150px;
+	background-color: black;
+	border-style: dashed;
+	border-color: white;
+	border-width:2px;
+	text-align:center;
+	color:white;
+	font-size: 20px;
+}
+
 #scoreboard
 {
 	position: absolute;
-	background: blue;
-	top:160px;
-	left: 900px;
-	height: 550px;
-	width:400px;
+	background: black;
+	top:210px;
+	left: 1050px;
+	height: 450px;
+	width:250px;
+	border-radius: 10px;
+	border-style: dashed;
+	border-color: white;
 }
 #score
 {
-	background: yellow;
+	background: black;
 	position: absolute;
-	top:80px;
-	width:180px;
-	height: 40px;
-	left:987.5px;
-	color:red;
+	top:150px;
+	left:1095px;
+	width:140px;
+	height: 25px;
+	color:white;
 	font-family: Courier;
-	font-size: 30px;
+	font-size: 20px;
 	text-align: center;
 	padding-top: 5px;
+	border-width: 2px;
+	border-style: dashed;
+	border-radius: 10px;
+	border-color: white;
+	
 }
 #gonextlevel
 {
-	background: yellow;
+	background:  white;
 	position: absolute;
-	top:300px;
-	width:380px;
+	top:320px;
+	width:230px;
 	height: 40px;
 	left:10px;
-	color:red;
-	font-family:Courier;
-	font-size: 30px;
+	color:green;
+	font-family: Courier;
+	font-size: 20px;
 	text-align: center;
 	padding-top: 5px;
+	border-width: 2px;
+	border-style: dashed;
+	border-radius: 10px;
+	border-color: blue;
 	visibility: hidden;
 }
 #playagain
 {
-	background: yellow;
+	background:  white;
 	position: absolute;
-	top:360px;
-	width:380px;
+	top:280px;
+	width:235px;
 	height: 40px;
 	left:10px;
 	color:red;
-	font-family:Courier;
-	font-size: 30px;
+	font-family: Courier;
+	font-size: 20px;
 	text-align: center;
 	padding-top: 5px;
+	border-width: 2px;
+	border-style: dashed;
+	border-radius: 10px;
+	border-color: blue;
 	visibility: hidden;
 }
+#level_indicator
+{
+	
+	position: absolute;
+	top:33px;
+	left:200px;
+	height: 100px;
+	width: 100px;
+	background-color: rgb(3, 2, 3);
+	border-width: 10px;
+	border-color:red;
+
+}
+#one
+{
+	position: absolute;
+	top:4px;
+	left:4px;
+	height: 44px;
+	width: 44px;
+	background-color: rgb(174, 174, 255);
+}
+#two
+{
+	position: absolute;
+	top:4px;
+	left:52px;
+	height: 44px;
+	width: 44px;
+	background-color: rgb(174, 174, 255);
+
+}
+#three
+{
+	position: absolute;
+	top:52px;
+	left:4px;
+	height: 44px;
+	width: 44px;
+	background-color: rgb(252, 234, 27);
+}
+#four
+{
+	position: absolute;
+	top:52px;
+	left:52px;
+	height: 44px;
+	width: 44px;
+	background-color: rgb(174, 174, 255);
+}
+
+
